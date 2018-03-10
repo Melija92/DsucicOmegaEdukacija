@@ -12,9 +12,9 @@ namespace DsucicOmegaEdukacija.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid KontaktId { get; set; }
-        public string Naziv { get; set; }
+        public string Ime { get; set; }
         public string Prezime { get; set; }
-        public int GradId { get; set; }
+        public Guid GradId { get; set; }
         public Grad Grad { get; set; }
     }
 }

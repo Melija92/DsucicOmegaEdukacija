@@ -8,7 +8,7 @@ namespace DsucicOmegaEdukacija.Models
         public ApplicationDbContext() : base("DefaultConnection")
         { }
 
-        public DbSet<Kontakt> Kontatki { get; set; }
+        public DbSet<Kontakt> Kontakti { get; set; }
         public DbSet<Grad> Gradovi { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
