@@ -3,7 +3,7 @@ using System.Data.Entity;
 namespace DsucicOmegaEdukacija.Models
 
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : IdentityDbContext
     {
         public ApplicationDbContext() : base("DefaultConnection")
         { }

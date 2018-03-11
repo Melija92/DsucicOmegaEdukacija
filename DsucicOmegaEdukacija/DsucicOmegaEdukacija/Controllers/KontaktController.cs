@@ -11,6 +11,7 @@ namespace DsucicOmegaEdukacija.Controllers
 {
     public class KontaktController : ApiController
     {
+        [Authorize(Roles = "Administrator")]
         [HttpGet]
         public HttpResponseMessage Get()
         {
